@@ -4,16 +4,16 @@ set -euo pipefail
 # TPC-DS dsgen Build Script for Ubuntu Linux
 # This script builds the TPC-DS data generation tool (dsgen) on Ubuntu Linux
 # 
-# Usage: Place this script in the same directory as DSGen-software-code-4.0.0/
+# Usage: Place this script in the DSGen-software-code-4.0.0/ directory
 #        Directory structure should be:
-#        ./build_dsgen_ubuntu.sh
+#        ./DSGen-software-code-4.0.0/build_dsgen_ubuntu.sh
 #        ./DSGen-software-code-4.0.0/tools/
 #        ./DSGen-software-code-4.0.0/tools/makefile
 
 # Configuration
-# Assume script is placed in parent directory of DSGen-software-code-4.0.0
+# Assume script is placed in DSGen-software-code-4.0.0 directory alongside tools folder
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-TPCDS_SOURCE_DIR="$SCRIPT_DIR/DSGen-software-code-4.0.0"
+TPCDS_SOURCE_DIR="$SCRIPT_DIR"
 TOOLS_DIR="$TPCDS_SOURCE_DIR/tools"
 BUILD_DIR="$TOOLS_DIR/build"
 INSTALL_DIR="/usr/local/bin"

@@ -173,7 +173,7 @@ getTdefsByNumber(int nTable)
          return(&s_tdefs[nTable]);
    }
 
-   return(getSimpleTdefsByNumber(int nTable));
+   return(getSimpleTdefsByNumber(nTable));
 }
 
 
